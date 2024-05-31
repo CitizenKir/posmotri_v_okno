@@ -255,19 +255,32 @@ a.content__card-link {
     background-color: rgba(84, 80, 80, 1);
 }
 
-/*вероятно, что тут перемудрил, напишите, если можно лучше и проще*/
-.content__card-link:not(:active):hover h2 {
-  text-decoration: underline;
-  color: #ffffff;
-  text-underline-offset: 5px;
-  text-decoration-thickness: 1.5px;
-}
+/*.content__card-link:not(:active):hover h2 {*/
+/*  text-decoration: underline;*/
+/*  color: #ffffff;*/
+/*  text-underline-offset: 1px;*/
+/*  text-decoration-thickness: 2px;*/
+/*}*/
 
-.content__card-link:not(:active):hover p {
+/*.content__card-link:not(:active):hover p {*/
+/*  text-decoration: underline;*/
+/*  color: #ffffff;*/
+/*  text-underline-offset: 2px;*/
+/*  text-decoration-thickness: 1px;*/
+/*}*/
+
+/*Благодарю за ответ, Яна. Не стану испытывать судьбу на последней попытке сдачи проекта и сделаю согласно вашему комментарию*/
+/*Мой вариант рабочий, но андерлайн для h2 скрывается из-за overflow: hidden, который мы задали для тайтла.*/
+/*Буду очень благодарен, если, после зачета моей работы, вы покажете как правильно сделать разную толщину андерлайна для заголовка и параграфа при ховере на блок*/
+
+a.content__card-link:hover {
   text-decoration: underline;
   color: #ffffff;
   text-underline-offset: 2px;
-  text-decoration-thickness: 1px;
+}
+
+a.content__card-link:active {
+  text-decoration: none;
 }
 
 .content__card-link_current {
